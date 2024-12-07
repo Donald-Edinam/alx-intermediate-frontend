@@ -570,6 +570,10 @@ video {
   display: grid;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -588,6 +592,10 @@ video {
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .grid-cols-3 {
@@ -730,6 +738,12 @@ video {
 .hover\:bg-gray-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity, 1));
+}
+
+@media (min-width: 640px) {
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 1024px) {
